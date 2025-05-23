@@ -1,0 +1,1 @@
+/usr/bin/c++ -O3 -DNDEBUG -rdynamic CMakeFiles/kallisto.dir/main.cpp.o -o kallisto  -Wl,-rpath,/usr/lib/x86_64-linux-gnu/hdf5/serial: libkallisto_core.a -lpthread /home/user/Desktop/Test/kallisto/src/../ext/htslib/libhts.a /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so -lcrypto -lcurl -Wl,-Bstatic -lpthread -Wl,-Bdynamic -lsz -lz -Wl,-Bstatic -ldl -Wl,-Bdynamic -lm -lrt 
