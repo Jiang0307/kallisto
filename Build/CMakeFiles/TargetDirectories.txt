@@ -1,0 +1,16 @@
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/htslib.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/edit_cache.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/list_install_components.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/install.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/install/local.dir
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/install/strip.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/kallisto_core.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/kallisto.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/edit_cache.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/rebuild_cache.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/list_install_components.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/install.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/install/local.dir
+/home/user/Desktop/GitHub/kallisto/Build/src/CMakeFiles/install/strip.dir

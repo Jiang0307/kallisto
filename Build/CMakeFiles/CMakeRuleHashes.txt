@@ -1,0 +1,19 @@
+# Hashes of file build rules.
+daca1b6b128c1d70aff21652b690dba4 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-build
+7e19542a36fcd483c953733843f224b4 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-configure
+fb831aa5ec91e41d2138dd87d488bfb7 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-download
+ae8d52f3ff4a9fcfcb0f4b054c427e6e /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-install
+a25affa2ec92575c25a07b6780051ef3 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-mkdir
+b6e1d5d76c73aafdb6aec5e7d6d92977 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-patch
+84d2d48b88f2ee040b7b4259b9b87dd7 /home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-update
+54d7160b6e69ca4cc15db57050ce6212 /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-build
+6ee33e7f076b3d66e0dc2205fe141635 /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-configure
+142b2bd5eba9722cbdaf23a9a16fc1a7 /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-download
+64c14a6aeb45519e2672135f20ddf38a /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-install
+72387fa19dd3cc5222fa1d4e2db1ea2e /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-mkdir
+876e5c5458823bc0cabe27225d11ca8b /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-patch
+12d69a3ff960ce734f164b3035652e17 /home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/htslib-update
+3b1cfb371147ddf2e91f836eb8a5b271 CMakeFiles/bifrost
+7a333a135fcb856e49ee07b441238d1a CMakeFiles/bifrost-complete
+3b1cfb371147ddf2e91f836eb8a5b271 CMakeFiles/htslib
+648e7b56dc032639d22baf5777029505 CMakeFiles/htslib-complete

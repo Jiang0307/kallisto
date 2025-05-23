@@ -1,0 +1,13 @@
+# Target labels
+ bifrost
+# Source files and their labels
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost.rule
+/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost-complete.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-build.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-configure.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-download.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-install.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-mkdir.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-patch.rule
+/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-update.rule

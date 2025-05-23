@@ -1,1 +1,1 @@
-cmd='autoreconf;-i;&&;autoheader;&&;autoconf;&&;/home/user/Desktop/Test/kallisto/ext/htslib/configure;--prefix=;--disable-bz2;--disable-lzma;--disable-libcurl'
+cmd='autoreconf;-i;&&;autoheader;&&;autoconf;&&;/home/user/Desktop/GitHub/kallisto/ext/htslib/configure;--prefix=;--disable-bz2;--disable-lzma;--disable-libcurl'

@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/user/Desktop/Test/kallisto/ext/htslib"
-  "/home/user/Desktop/Test/kallisto/ext/htslib/src/htslib-build"
-  "/home/user/Desktop/Test/kallisto/ext/htslib"
-  "/home/user/Desktop/Test/kallisto/ext/htslib/tmp"
-  "/home/user/Desktop/Test/kallisto/ext/htslib/src/htslib-stamp"
-  "/home/user/Desktop/Test/kallisto/ext/htslib/src"
-  "/home/user/Desktop/Test/kallisto/ext/htslib/src/htslib-stamp"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-build"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib/tmp"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib/src"
+  "/home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/user/Desktop/Test/kallisto/ext/htslib/src/htslib-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/user/Desktop/Test/kallisto/ext/htslib/src/htslib-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/user/Desktop/GitHub/kallisto/ext/htslib/src/htslib-stamp${cfgdir}") # cfgdir has leading slash
 endif()

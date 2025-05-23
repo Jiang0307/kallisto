@@ -4,6 +4,6 @@
 
 method=source_dir
 command=
-source_dir=/home/user/Desktop/Test/kallisto/ext/htslib
+source_dir=/home/user/Desktop/GitHub/kallisto/ext/htslib
 work_dir=
 

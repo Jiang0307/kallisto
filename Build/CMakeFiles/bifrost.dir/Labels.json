@@ -1,0 +1,43 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/Build/CMakeFiles/bifrost-complete.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-build.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-configure.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-download.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-install.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-mkdir.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-patch.rule"
+		},
+		{
+			"file" : "/home/user/Desktop/GitHub/kallisto/ext/bifrost/src/bifrost-stamp/bifrost-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"bifrost"
+		],
+		"name" : "bifrost"
+	}
+}
