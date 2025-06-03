@@ -1,23 +1,24 @@
 #!/bin/bash
 
-while getopts "k:" opt; do
+while getopts "k:n:" opt; do
   case $opt in
     k) k=$OPTARG ;;
-    *) echo "使用方式: $0 -k <k值>"; exit 1 ;;
+    n) num_read=$OPTARG ;;
+    *) echo " - Usage: $0 -k <k-mer> -n <num_read>"; exit 1 ;;
   esac
 done
 
-if [ -z "$k" ]; then
-  echo "錯誤：請使用 -k 指定 k 值"
-  echo "使用方式: $0 -k <k值>"
+if [ -z "$k" ] || [ -z "$num_read" ]; then
+  echo " - Error, please specify arguments -k and -n"
+  echo "Usage: $0 -k <k-mer> -n <num_read : 100K, 1M, 10M, 100M>"
   exit 1
 fi
 
-# 加上 Data 路徑
 index="Data/index_table/index_k_${k}.idx"
-output="Result/result_k_${k}"
+output="Result/result_k_${k}_${num_read}"
 threads=8
-read1="Data/read/SRR062634_10M_1.fastq"
-read2="Data/read/SRR062634_10M_2.fastq"
+
+read1="Data/read/ERR251006_${num_read}_1.fastq"
+read2="Data/read/ERR251006_${num_read}_2.fastq"
 
 kallisto pseudo -i "$index" -o "$output" -t "$threads" "$read1" "$read2"
