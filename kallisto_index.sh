@@ -14,7 +14,7 @@ if [ -z "$k" ]; then
 fi
 
 # 重要：加上 Data 路徑
-index="Data/index_table/index_k_${k}.idx"
-fasta="Data/transcript/transcripts.fasta"
+index="Data/Index_Table/index_k_${k}.idx"
+fasta="Data/Transcript/transcripts.fasta"
 
 kallisto index -i "$index" -k "$k" "$fasta"

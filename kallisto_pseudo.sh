@@ -1,25 +1,66 @@
-#!/bin/bash
+#!/usr/bin/env bash
+set -euo pipefail
 
-while getopts "k:n:" opt; do
+# === Configurable parameters ===
+READ_DIR="Data/Read"            # Change if your folder name is different
+INDEX_DIR="Data/Index_Table"
+THREADS=8
+FRAG_LEN=100    # For single-end
+FRAG_SD=5       # For single-end
+
+usage() {
+  echo "Usage: $0 -k <k-mer>" >&2
+  exit 1
+}
+
+k=""
+while getopts "k:" opt; do
   case $opt in
     k) k=$OPTARG ;;
-    n) num_read=$OPTARG ;;
-    *) echo " - Usage: $0 -k <k-mer> -n <num_read>"; exit 1 ;;
+    *) usage ;;
   esac
 done
+[[ -z "${k}" ]] && usage
 
-if [ -z "$k" ] || [ -z "$num_read" ]; then
-  echo " - Error, please specify arguments -k and -n"
-  echo "Usage: $0 -k <k-mer> -n <num_read : 100K, 3200K, 1M, 10M, 100M>"
-  exit 1
+index="${INDEX_DIR}/index_k_${k}.idx"
+[[ -f "$index" ]] || { echo "Index file not found: $index" >&2; exit 2; }
+
+shopt -s nullglob
+files=( "$READ_DIR"/*.fastq "$READ_DIR"/*.fq "$READ_DIR"/*.fastq.gz "$READ_DIR"/*.fq.gz )
+files=( "${files[@]}" )  # ensure array
+
+count=${#files[@]}
+if (( count == 0 )); then
+  echo "No FASTQ file found in ${READ_DIR}/" >&2
+  exit 3
+elif (( count > 2 )); then
+  echo "Expected 1 or 2 FASTQ files, but found ${count}:" >&2
+  printf '%s\n' "${files[@]}" >&2
+  exit 4
 fi
 
-index="Data/index_table/index_k_${k}.idx"
-output="Result/result_k_${k}_${num_read}"
-threads=8
+output="Result/result_k_${k}"
+mkdir -p "$output"
 
-# 單端資料只使用 read1
-read1="Data/read/ERR251006_${num_read}_1.fastq"
-
-# 使用 --single 標誌來指定單端模式
-kallisto pseudo -i "$index" -o "$output" -t "$threads" --single -l 100 -s 5 "$read1"
+if (( count == 1 )); then
+  echo "[INFO] Running single-end mode"
+  read1="${files[0]}"
+  echo "[INFO] read1=${read1}"
+  kallisto pseudo \
+    -i "$index" \
+    -o "$output" \
+    -t "$THREADS" \
+    --single -l "$FRAG_LEN" -s "$FRAG_SD" \
+    "$read1"
+else
+  echo "[INFO] Running paired-end mode"
+  read1="${files[0]}"
+  read2="${files[1]}"
+  echo "[INFO] read1=${read1}"
+  echo "[INFO] read2=${read2}"
+  kallisto pseudo \
+    -i "$index" \
+    -o "$output" \
+    -t "$THREADS" \
+    "$read1" "$read2"
+fi
