@@ -1,5 +1,8 @@
 # kallisto
 
+## Environment
+* `Linux`
+
 ## Installation
 * In `kallisto/`
 ```shell
