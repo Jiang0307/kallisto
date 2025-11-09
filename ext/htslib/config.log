@@ -256,7 +256,7 @@ conftest.c:28:6: warning: conflicting types for built-in function 'log'; expecte
       |      ^~~
 conftest.c:1:1: note: 'log' is declared in header '<math.h>'
     1 | /* confdefs.h */
-/usr/bin/ld: /tmp/ccaRFZhZ.o: in function `main':
+/usr/bin/ld: /tmp/ccqRn4Mq.o: in function `main':
 /home/user/Desktop/GitHub/kallisto/ext/htslib/conftest.c:32:(.text.startup+0xb): undefined reference to `log'
 collect2: error: ld returned 1 exit status
 configure:4711: $? = 1
