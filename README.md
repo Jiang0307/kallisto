@@ -6,8 +6,8 @@
 ## Installation
 * In `kallisto/`
 ```shell
-chmod +x build.sh
-sudo build.sh
+sudo chmod +x build.sh
+./build.sh
 ```
 
 ## Usage : build index table
